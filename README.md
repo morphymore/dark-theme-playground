@@ -1,18 +1,13 @@
 Dark Theme Playground
 ====
 
-## Approach Overview
-
-- [x] 001 Stylesheet Switching
-- [ ] 002 Custom Properties (next)
-
 ## 001 Stylesheet Switching
 
-### Concept
+### Approach
 
-Switch between 2 stylesheets (`dark-theme.css`/`light-theme.css`).
+Switch between 2 stylesheets (`dark-theme.css` / `light-theme.css`).
 
-Additional achievements:
+### Additional achievements
 - Use `localStorage` to remember theme choice
 - ... and check for theme choice upon landing
 - Change btn text on click
