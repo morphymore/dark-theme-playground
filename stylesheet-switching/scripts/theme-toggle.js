@@ -8,7 +8,7 @@ const currentTheme = localStorage.getItem("theme");
 // If current theme preference in localStorage is "dark"
 if (currentTheme == "dark") {
   // Use dark-theme.css (to apply dark theme)
-  theme.href = "dark-theme.css";
+  theme.href = "./stylesheets/dark-theme.css";
   btn.textContent = "Go 🌝"
 } else {
   btn.textContent = "Go 🌚"
@@ -18,14 +18,14 @@ if (currentTheme == "dark") {
 btn.addEventListener("click", function() {
   let setTheme;
   // If the current stylesheet is "light-theme.css"
-  if (theme.getAttribute("href") == "light-theme.css") {
+  if (theme.getAttribute("href") == "./stylesheets/light-theme.css") {
     // Switch to dark theme by switching stylesheet to "dark-theme.css"
-    theme.href = "dark-theme.css";
+    theme.href = "./stylesheets/dark-theme.css";
     btn.textContent = "Go 🌝"
     setTheme = "dark";
   } else {
     // Switch to to light theme by switching stylesheet to "light-theme.css"
-    theme.href = "light-theme.css";
+    theme.href = "./stylesheets/light-theme.css";
     btn.textContent = "Go 🌚"
     setTheme = "light";
   }
